@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 setTimeout(() => {
                     document.documentElement.style.overflowY = 'auto'; // Restablece después de la animación
                 }, 300);
-                menu.style.right = '-200px';
+                menu.style.right = '-60vw';
             }
         });
     }

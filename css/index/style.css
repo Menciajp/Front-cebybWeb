@@ -19,14 +19,17 @@ html {
 
 /* ---------------------------HEADER------------------------ */
 header {
+    position:sticky;
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--color-blanco);
+    z-index: 2;
 }
 
 header img {
-    width: 25vw;
+    width: 20vw;
 }
 
 header button {
@@ -44,6 +47,14 @@ header ul {
 /*------------------MAIN------------------------ */
 main{
     overflow: hidden;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: var(--color-blanco);
+}
+
+h1{
+    font-size: 3.0rem;
 }
 /* slide de imagenes */
 #slideshow {
@@ -74,7 +85,11 @@ main img {
     height: 100%;
     width: 100%;
 }
+
 /* secciones */
+.seccion{
+    z-index: 0;
+}
 .seccion h3{
     padding: 0.5em;
     font-size: 2.6rem;
@@ -84,12 +99,23 @@ main img {
 .seccion p{
     font-size: 2.0rem;
     padding: 0.8em;
-    text-align: justify;
+    text-align:left;
 }
 
 #map {
     height: 40vh;
     width: 100%;
+    margin: 0.5em;
+    position: relative;
+    z-index: 0;
+}
+/* ---------------------------FOOTER------------------------ */
+footer{
+    background-color: var(--color-primario);
+    color: #FBFCFC;
+    font-size: 1.2rem;
+    padding: 1em;
+    z-index: 0;
 }
 
 /* -----------------------------MENU------------------------ */
@@ -102,6 +128,7 @@ main img {
     right: -60vw;
     /* Menú oculto por defecto */
     transition: right 0.5s ease;
+    z-index: 4;
     /* Transición suave */
 }
 

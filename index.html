@@ -24,8 +24,8 @@
         <nav>
             <ul>
                 <li><a href="">Login</a></li>
-                <li><a href="">¿Quienes somos?</a></li>
-                <li><a href="">¿Donde encontrarnos?</a></li>
+                <li><a href="#quienesSomos">¿Quienes somos?</a></li>
+                <li><a href="#dondeEncontrarnos">¿Donde encontrarnos?</a></li>
             </ul>
             <button id="boton-menu">&#9776;</button>
         </nav>
@@ -33,9 +33,14 @@
     <!-- main -->
     <main>
         <!-- slide de imagenes -->
+        <section>
+            <h1>Laboratorio CEByB</h1>
+        </section>
         <section id="slideshow">
             <picture class="slide">
-                <img src="./public/pictures/Laboratorio_CEBYB_tel.png" alt="OTRA COSA">
+                <source media="(min-width: 800px)" srcset="./public/pictures/sangre-g.jpg">
+                <source media="(min-width: 500px)" srcset="./public/pictures/sangre-m.jpg">
+                <img src="./public/pictures/sangre-p.jpg" alt="sangre">
             </picture>
             <picture class="slide">
                 <source media="(min-width: 800px)" srcset="./public/pictures/microscopio-g.jpg">
@@ -44,7 +49,7 @@
             </picture>
         </section>
         <!-- ¿Quienes somos? -->
-        <section class="seccion">
+        <section class="seccion" id="quienesSomos">
             <h3>¿Quienes somos?</h3>
             <p>El Laboratorio de Análisis Clínicos CEByB, con sede en Posadas, 
                 ha establecido una sólida trayectoria en el ámbito de la salud desde su fundación. 
@@ -54,18 +59,22 @@
                  el laboratorio ofrece una amplia gama de servicios, desde análisis rutinarios hasta pruebas especializadas, brindando atención
                   personalizada y resultados ágiles que reflejan su dedicación a mejorar la calidad de vida de la comunidad.</p>
         </section>
-        <section class="seccion">
+        <section class="seccion" id="dondeEncontrarnos">
             <h3>Donde encontrarnos</h3>
+            <p>Junin 1321, Posadas, Misiones, Argentina</p>
             <div id="map"></div>
         </section>
     </main>
+    <footer>
+        <h2>Contacto: 07364516690</h2>
+    </footer>
     <!-- script -->
     <script src="./js/menu.js"></script>
     <!-- menu desplegable -->
     <div class="menu" id="menu">
         <ul>
-            <li><a href="">¿Quienes somos?</a></li>
-            <li><a href="">¿Donde encontrarnos?</a></li>
+            <li><a href="#quienesSomos">¿Quienes somos?</a></li>
+            <li><a href="#dondeEncontrarnos">¿Donde encontrarnos?</a></li>
             <li><a href="">Ingresar</a></li>
         </ul>
     </div>
