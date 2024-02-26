@@ -1,0 +1,123 @@
+:root {
+    --color-primario:#48C9B0;
+    --color-blanco: #FBFCFC;
+    --color-negro: #212121;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-family);
+    color: var(--color-negro);
+}
+
+/* ---------------------------HEADER------------------------ */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-blanco);
+}
+
+header img {
+    width: 25vw;
+}
+
+header button {
+    background-color: transparent;
+    font-size: 4.0rem;
+    font-weight: bolder;
+    border: none;
+    margin-left: 40vw;
+}
+
+header ul {
+    display: none;
+}
+
+/*------------------MAIN------------------------ */
+main{
+    overflow: hidden;
+}
+/* slide de imagenes */
+#slideshow {
+    position: relative;
+    width: 100vw;
+    /* Asegurar que el contenedor de diapositivas tenga un ancho definido */
+    height: 30vh;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+main picture {
+    height: 100%;
+    width: 100%;
+}
+
+main img {
+    height: 100%;
+    width: 100%;
+}
+/* secciones */
+.seccion h3{
+    padding: 0.5em;
+    font-size: 2.6rem;
+    border-bottom: solid 0.2em var(--color-primario);
+}
+
+.seccion p{
+    font-size: 2.0rem;
+    padding: 0.8em;
+    text-align: justify;
+}
+
+#map {
+    height: 40vh;
+    width: 100%;
+}
+
+/* -----------------------------MENU------------------------ */
+.menu {
+    width: 60vw;
+    height: 100%;
+    background-color: var(--color-negro);
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    /* Menú oculto por defecto */
+    transition: right 0.5s ease;
+    /* Transición suave */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.menu ul li a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: 2rem;
+}

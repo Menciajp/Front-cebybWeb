@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Agregar la hoja de estilo de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Agregar la biblioteca de Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index/style.css">
+    <title>CEByB</title>
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source media="(min-width: 700px)" srcset="./public/pictures/Laboratorio_CEBYB.png">
+            <img src="./public/pictures/Laboratorio_CEBYB_tel.png" alt="Logo CEByB">
+        </picture>
+        <nav>
+            <ul>
+                <li><a href="">Login</a></li>
+                <li><a href="">¿Quienes somos?</a></li>
+                <li><a href="">¿Donde encontrarnos?</a></li>
+            </ul>
+            <button id="boton-menu">&#9776;</button>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- slide de imagenes -->
+        <section id="slideshow">
+            <picture class="slide">
+                <img src="./public/pictures/Laboratorio_CEBYB_tel.png" alt="OTRA COSA">
+            </picture>
+            <picture class="slide">
+                <source media="(min-width: 800px)" srcset="./public/pictures/microscopio-g.jpg">
+                <source media="(min-width: 500px)" srcset="./public/pictures/microscopio-m.jpg">
+                <img src="./public/pictures/microscopio-p.jpg" alt="microscopio">
+            </picture>
+        </section>
+        <!-- ¿Quienes somos? -->
+        <section class="seccion">
+            <h3>¿Quienes somos?</h3>
+            <p>El Laboratorio de Análisis Clínicos CEByB, con sede en Posadas, 
+                ha establecido una sólida trayectoria en el ámbito de la salud desde su fundación. 
+                Reconocido por su excelencia en diagnósticos precisos y confiables,
+                CEByB se distingue por su compromiso con la innovación tecnológica y el cumplimiento riguroso
+                de los más altos estándares de calidad. Con un equipo de profesionales altamente capacitados y una infraestructura moderna,
+                 el laboratorio ofrece una amplia gama de servicios, desde análisis rutinarios hasta pruebas especializadas, brindando atención
+                  personalizada y resultados ágiles que reflejan su dedicación a mejorar la calidad de vida de la comunidad.</p>
+        </section>
+        <section class="seccion">
+            <h3>Donde encontrarnos</h3>
+            <div id="map"></div>
+        </section>
+    </main>
+    <!-- script -->
+    <script src="./js/menu.js"></script>
+    <!-- menu desplegable -->
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="">¿Quienes somos?</a></li>
+            <li><a href="">¿Donde encontrarnos?</a></li>
+            <li><a href="">Ingresar</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
